@@ -1,0 +1,215 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+
+body {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.pg_inicial {
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    height: 80px;
+    
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    position: absolute;
+    left: 50px;
+    font-weight: 500;
+    align-items: center;
+}
+
+h1 + img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 20px ;
+    align-items: center;
+}
+
+header hr {
+    
+    background-color: blueviolet;
+    height: 1px;
+    position: relative;
+    top: 100%;
+    margin: 5px;   
+}
+
+.conteudo {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.post {
+    display: flex;
+    position: relative;
+    background-color: rgb(244, 232, 254);
+    height: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+#img_pracheta {
+    margin-top: 20px;
+    position: relative;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: none;
+}
+
+.post p {
+
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 18px;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 35px;
+    margin: 0;
+    padding-left: 15px;
+    
+    
+}
+
+#img_3pontos{
+    position: absolute;
+    width: 30x;
+    height: 30px;
+
+    top: 25px;
+    right: 45px;
+
+}
+
+.sub-text {
+    
+    color: gray;
+    font-size: 12px;
+}
+
+
+.infos {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.infos p, .infos ul {
+    color: gray;
+    font-weight: 500;
+}
+
+.container-ativ {
+    display: grid;
+    grid-template-columns: 130px 200px;
+    grid-template-rows: 100px;
+    position: absolute;
+    top: 0;
+    right: 60px;
+    margin-top: 20px ;
+
+}
+
+.container-ativ div h3{
+    font-weight: lighter;
+    color: black;
+    margin-top: 15px;
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.container-ativ p {
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+
+.container-ativ div {
+    border-left: 2px solid grey;
+
+}
+
+
+
+.container-ativ {
+    position: flex;
+    
+}
+
+#img_arqv{
+    width: 350px;
+    height: 70px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.coments {
+    position: relative;
+    height: 100px ;
+}
+
+
+#img_usuario{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    
+}
+
+.coments input {
+    position: absolute;
+    width: 800px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 40px;
+    margin: 0;
+    padding: 5px;
+    top: 30px;
+    text-indent: 10px;
+    font-weight: 500;
+    
+    
+}
+
+.coments #img_seta{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin:0;
+    top: 30px;
+    right: 50px;
+
+
+
+}

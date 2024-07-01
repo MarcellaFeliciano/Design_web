@@ -1,0 +1,283 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 2px solid grey;
+}
+
+.logo_header {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo_header h1 {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo_header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    margin: 10px;
+}
+.icon_no_login {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.icon_no_login {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon_no_login a{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon_no_login .bt_header_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    padding:1%;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: rgb(33, 163, 152);
+    color: white;
+}
+.icon_no_login .bt_header_login p{
+    color: black;
+    font-weight: 700;
+
+}
+.icon_no_login .bt_header_login img{
+    width: 30px;
+    height: 30px;
+    margin:10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: 86vh;
+}
+.parte1 {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.parte1 h3 {
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(33, 163, 152);
+}
+.parte1 h4 {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.parte1 img {
+    width: 400px;
+    height: 400px;
+}
+.parte2 {
+    width: 60%;
+    height:90vh;
+    background-color: rgb(33, 163, 152) ;
+    background-image: linear-gradient(to right, white, rgb(33, 163, 152));
+}
+.telalogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    font-size: 20px;
+    padding: 30px;
+    
+    
+}
+.org_linhas{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 163, 152)
+}
+.org_linhas h1,.entrar{
+    display: flex;
+    align-self: center;
+}
+.org_linhas .uni{
+    margin-top: 30px;
+}
+.org_linhas .j{
+    margin-top: 15px;
+}
+
+
+input {
+    background-color: #ecf2f7;
+    color: black;
+    outline: none;
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 20px;
+}
+input::placeholder {
+    color: #a9adb6;
+}
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    width: 360px;
+    background-color: rgb(179, 243, 222);
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    section {
+        flex-direction: column;
+    }
+    .parte1 {
+        width: 100%;
+    }
+    .parte1 img {
+        width: 100px;
+        height: 100px;
+    }
+    .parte2 {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo_header {
+        width: 70%;
+    }
+
+    .icon_no_login .bt_header_login {
+        width: 80px;
+        height: 60px;
+        padding: 1px;
+
+    }
+    .bt_header_login p {
+        display: none;
+    }
+    .icon_no_login {
+        width: 30%;
+
+    
+    }
+    .icon_no_login .bt_header_login img{
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .logo_header {
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        
+    }
+
+    .logo_header h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+        height: 100%;
+    }
+    section {
+        height: 90%;
+    }
+    .parte1 {
+        height: 20%;
+    } 
+    .parte1 h3 {
+        margin:3px;
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(33, 163, 152);
+    }
+    .parte1 h4 {
+        margin:3px;
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    
+    .parte1 img {
+        display: none;
+    }
+    .parte2 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 80%;
+        background-color: white;
+    }
+    .telalogin {
+        margin-top: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .icon_no_login {
+        display: none;
+    
+    }
+
+
+}

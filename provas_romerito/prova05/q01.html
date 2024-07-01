@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova design</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        main {
+            width: 300px;
+            height: 400px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow: scroll;
+           
+
+        }
+        .botoes {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mostrar {
+
+            padding: 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h4>Insira nomes: </h4>
+        <input type="text" id="nomes">
+        <div class="botoes">
+            <button id="add">Adicionar</button>
+            <button id="mudar">Maiusculo</button>
+        </div>
+        <div id="mostrar">
+
+
+        </div>
+    </main>
+    <script src="q01.js"></script>
+</body>
+</html>
