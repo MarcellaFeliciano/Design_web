@@ -1,0 +1,137 @@
+
+
+body {
+
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+header {
+    position: relative;
+
+    height: 160px;
+
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    background-color: rgb(229, 194, 129);
+
+}
+
+h1 {
+    top: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+    position: relative;
+    color:black;
+    text-align: right;
+
+}
+
+h1 + h2 {
+    
+    padding-right: 25px;
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+header hr {
+    border: none;
+    padding: none;
+    
+    width: 100%;
+    height: 4px;
+    background-color:black
+}
+
+nav {
+    margin:0;
+    /** background-color: rgb(229, 194, 129);
+    justify-content: center; **/
+}
+ 
+ul {
+    
+    /** margin-bottom: 10px;
+     width: 100%;
+     align-items: center;**/
+    
+    display: flex;
+    justify-content: center;
+    gap: 8px
+    
+    
+}
+
+
+ul li {
+
+    border-radius: 1px;
+    background-color: rgb(61, 178, 190);
+    list-style-type: none;
+
+    padding: 5px;
+    width: 95px;
+    height: 18px;
+
+    text-align: center;
+
+}
+
+.pg_inicial {
+    background-color: rgb(20, 233, 233);
+}
+
+
+.containe {
+    align-content: center;
+    position: relative;
+
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 350px 60px 350px 60px 350px;
+    grid-template-rows: 250px 30px 250px 10px;
+
+}
+
+.containe h3 {
+    position: relative;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 0;
+
+       
+}
+
+.containe p {
+    color: rgb(42, 42, 184);
+    font-weight:550;
+}
+
+
+.containe hr {
+    height: 2px;
+    background-color: black;
+    border: 0;
+}
