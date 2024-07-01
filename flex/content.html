@@ -1,0 +1,93 @@
+<!--Container flex 
+
+Display: flex / fora se comporta como um block!
+Display: inline-flex / fora se comporta como inline!
+
+main-axis - eixo principal (da esuqerda para a direira)
+cross-axis - eixo transverssal (de cima para baixo)
+
+flex-direction:
+
+ row / row-reverse /
+
+- o elemento se não for defenido (tamanho) acompanha a altura da div e a dimensão do comprimento é de acordo com o conteudo da div dentro da div-flex
+
+  columns / colunm-reverse
+
+- o elemento se não for definido acompnha a altura do elemnto, já a largura acompnha o tamanho da div-flex
+
+ relação ao eixo principal são:
+main-start - inicio do eixo principal
+main-end - fim do eixo principal
+
+flex-wrap: wrap (in flex-direction:row e column)
+flex-wrap: wrap-revrse
+
+- controla se os elemntos não cabem todos dentro do container-flex (overflow)
+- o eixo principal cria duas linhas no limite do container (fazendo com que os elementos caibam no espaço disponivel)
+
+
+
+
+
+Propriedades FLEX:
+
+ - Justify-content: organiza os elemnetos entre eles no eixo principal
+
+ - Align-items: no eixo cross/transvesal
+ o fluxo dos items é em relação ao eixo cross-star ou cross-end
+  propriedades - strech(padrao)/ flex-start / flex-end / center / baseline
+
+  - o elemento com o flex-start recebe a altura padrao do elemento/texto se eu só definir o width, ficam alinhados da esquerda para direita, se alinha em cima
+  - o elemento com o flex-end se alinha de baixo
+  - o elemnto com o center, se alinha no centro do container da esquerda para direita
+  - o elemento com baseline, aplica a distancia de alinhamento em todo o conteudo mesmo que o elemenro só apresente em um, criando uma linha imaginaria em todos items em relação ao de maior ou menor tamanho
+  - o elemnto com o strech se estica para ficar com a altura/height do tamanho do container
+
+ - Align-content: organizar as os elementos em relação ao eixo transversal
+
+  - align-content: flex-start/end (organiza os elementos na horizontal no inicio ou o fim do container, jogando os espaçõs vazios)
+  - align-content: center (centraliza os lemnetos no container na horizontal)
+  - align-content: space-between (orgazina os lemntos dando espaço entre eles na horizontal, sem dar espaço na borda de cima ou de baixo)
+  - align-content: space-arouns (organiza os lementos ewntre eles dando um espaço ao redor de cima, entre e a baixo)
+
+ - Flex-grow : propriedade que faz crecer o elemento até onde o container cabe
+ (flex-grow: 1;)
+
+   align-content X align-items 
+ content - em relação ao conntainer
+ items - em relação ao elemento
+
+flex-grow : faz o espaço livre entre o cabeçlho e o rodapé ser ocupado
+
+flex-shrink : diminui a sdivs de acordo com o tamanho disponivel no container
+
+<div class="container">
+        <div class="item" style="flex-shrink: 1">Conteudo 1 Lorem ipsum sam similique rerum laudantium unde magni provident sapiente deleniti! Quo atque facilis cum labore facere rem expedita eaque voluptatibus quisquam?</div>
+        <div class="item" style="flex-shrink: 3">Conteudo 2 Lorem ipsum, ta velit  numquam nesciunt odio illum beatae amet ea at voluptatem quia?</div>
+        <div class="item" style="flex-shrink: 1">Conteudo 3 Lorem ipsum  adipisicing ilis molestias culpa, neque impedit praesentium ratione itaque nesciunt blanditiis quibusdam deleniti corrupti minima obcaecati at, expedita et inventore recusandae delectus!</div>
+
+    </div>
+
+flex-basis: define um tamanho padrao in icial para a div, porem se o espaço não couber ele diminui!
+
+.item {
+            border: 1px solid black;
+            flex-basis: 200px;
+            flex-shrink: 1;
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>

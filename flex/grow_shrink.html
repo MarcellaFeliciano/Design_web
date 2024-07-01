@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            width:600px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .item {
+            margin:10px;
+            border: 1px solid pink;
+            flex-shrink: 0; /** o valor 1 diminui as divs apara caber no container**/ 
+            width: 250px;
+            /** flex-grow: 1; o numero representa quantras vezes o tamanho de uma div irá crescer ( div=1 / div=3 / div=1 -> 50px / 150px / 50px) **/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" style="flex-shrink: 1">Conteudo 1 Lorem ipsum sam similique rerum laudantium unde magni provident sapiente deleniti! Quo atque facilis cum labore facere rem expedita eaque voluptatibus quisquam?</div>
+        <div class="item" style="flex-shrink: 3">Conteudo 2 Lorem ipsum, ta velit  numquam nesciunt odio illum beatae amet ea at voluptatem quia?</div>
+        <div class="item" style="flex-shrink: 1">Conteudo 3 Lorem ipsum  adipisicing ilis molestias culpa, neque impedit praesentium ratione itaque nesciunt blanditiis quibusdam deleniti corrupti minima obcaecati at, expedita et inventore recusandae delectus!</div>
+
+    </div>
+    
+</body>
+</html>
