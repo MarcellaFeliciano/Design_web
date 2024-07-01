@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .container {
+            display: table; /**  ocupa apenas o espaço que os elementso se nao coocar o tamanho especifico **/
+            width: 80%;
+            margin: 0 10%;
+            border: 1px solid green;
+
+
+        }
+        header, footer {
+            display: table-row;
+            height: 120px;
+            background-color: bisque;
+        }
+
+        main {
+            display: table;
+            width: 100%;
+            
+            /** border: 2px solid red; **/
+
+        }
+
+        aside {
+            display: table-cell;
+            width:25%;
+            height: 300px;
+            background-color: aquamarine;
+            padding: 10px;
+            
+
+        }
+        section {
+            display: table-cell;
+            width: 75%;
+            height: 300px;
+            background-color: aqua;
+            padding: 10px;
+            
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Cabeçalho</header>
+        <main>
+            <aside>Painel Lateral</aside>
+            <section>Conteudo</section>
+
+        </main>
+        
+        <footer>Rodapé</footer>
+
+
+    </div>
+    
+</body>
+</html>

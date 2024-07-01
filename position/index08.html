@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding:0;
+            border:0;
+            margin:0;
+
+        }
+        .container {
+            margin: 0 10%;  /** apicando margem tanto na esquerda quanto na direita **/
+            /** ( ordem = top -> right -> botton -> left**/
+            border: 1px solid black;
+            /** background-color: bisque; **/
+
+
+        }
+        header, footer {
+            height: 120px;
+            width: 100%;
+            background-color: burlywood;
+            
+            
+
+
+        }
+        aside {
+            width:25%;
+            height: 300px;
+            background-color: brown;
+            display:inline-block;
+
+        }
+        section {
+            vertical-align: top;
+            margin-left: -4px;
+
+            width: 75%;
+            height: 300px;
+            background-color: bisque;
+            display:inline-block;
+
+        }
+
+        aside ul li a{
+            display: inline;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Cabeçaçho</header>
+        <aside>
+
+            <ul>
+                <li><a>Cuscuz</a></li>
+                <li><a>Amigos</a></li>
+                <li><a>Receita</a></li>
+                <li><a>Home</a></li>
+            </ul>
+
+        </aside>
+        <section>Conteudo</section>
+        <footer>Rodapé</footer>
+
+
+    </div>
+    
+
+    
+</body>
+</html>

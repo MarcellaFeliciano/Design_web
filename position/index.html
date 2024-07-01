@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin:0;
+    padding: 0;
+    }
+
+
+
+    .container {
+        position: relative; 
+        margin: 50px;
+        border: 1px solid black;
+    }
+
+    .bloco1 {
+        /* */        
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        margin-bottom: 20px ;
+    }
+
+    .bloco2 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+        margin-bottom: 20px ;
+    }
+
+    .bloco3 {
+        position: relative;
+        left: 75px;
+        top: 10px;
+
+
+
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        margin-bottom: 20px ;
+    }
+
+    .bloco4 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        margin-bottom: 20px ;
+    }
+
+
+
+</style>
+
+<body>
+    fora da div
+    <div class="container">
+        <p>dentro da div</p>
+        <div class="bloco1"></div>
+        <div class="bloco2">absolute</div>
+        <div class="bloco3"></div>
+        <div class="bloco4"></div>
+    </div>
+    
+
+</body>
+</html>
