@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: row;
+            gap: 2px;
+            background-color: bisque;
+
+        }
+        
+        div {
+            border: 1px solid black;
+            height: 100px;
+            width: 150px
+        }
+
+    </style>
+</head>
+<body>
+    <section id='secao'>
+        <div class="caixa" id="caixa">
+
+        </div>
+
+    </section>
+
+    <script>
+        let div = document.getElementById('caixa') 
+        let section = document.getElementById('secao')
+            
+         // alvo
+         // quando eu pego o elemento do html ele se trasnfoma como um objeto
+         // Posso mnaipular os atributos /  
+        /*
+        div.onclick = function(){  //manipulador   / só vai reberber uma propriedade
+            alert('hi');  
+        }
+        */
+        // arrow funcition  / a função é guardada nessa ariavel manipulador  / pode receber varias funções 1 unico elemnto!
+        
+        let manipulador1 = () =>  {
+            //alert('usando arrow funcition')
+            //div.style.background = 'red'
+
+            let width = div.style.width - 10
+            const new_div = document.createElement('div')
+            new_div.id = 'caixa';
+
+            
+            new_div.style.width = '70px'
+            new_div.style.background = 'pink'
+
+            div.style.width = '70px'
+
+            section.appendChild(new_div)
+
+
+        }
+
+        let manipulador2 = () => {
+            div.innerText = 'entrou'
+        }
+
+        let manipulador3 = () => {
+            div.innerText = 'saiu'
+            div.style.background = 'green'
+            div.style.textAlign = 'center'
+        }
+        
+        //div.addEventListener('click', clicar())
+        div.addEventListener ('click', manipulador1);
+
+        //div.addEventListener('mouseenter', entrar())
+        div.addEventListener ('mouseenter', manipulador2);
+
+        //div.addEventListener('mouseout', sair())
+        div.addEventListener('mouseout', manipulador3)
+
+        //div.removeEventListener ('click', manipulador1);
+    </script>
+    
+</body>
+</html>
