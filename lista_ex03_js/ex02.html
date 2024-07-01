@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2 de js</title>
+    <style>
+
+        * {
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none
+
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+
+        .header {
+            display: flex;
+            height: 450px;
+            width: 400px;
+            background-color: rgb(201, 127, 238);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+        .nav {
+            display: flex;
+            height: 100px;
+            width: 400px;
+            background-color: rgb(201, 127, 238);
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        .menu {
+            height: 350px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;
+
+            
+            
+        }
+        .li_menu {
+            margin-right: 10px;
+            display: flex;
+            height: 50px;
+            width: 350px;
+            background-color: blueviolet;
+             /** **/
+            align-items: center;
+            margin-left: 10px;
+
+        }
+        .menu li a {
+            color: white;
+            text-align: center;
+
+        }
+
+        .menu li input {
+            height: 20px;
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        #botao, label {
+            display: none;
+        }
+
+
+
+        label {
+                display: block;
+                margin-right: 15px;
+                font-size: 30px;
+                color: white;
+            }
+
+        label:hover {
+            color: lightpink
+
+        }
+        .menu {
+            display: flex;  /**  faz o elemento header sumir**/            
+        }
+
+        /**#botao:checked ~.menu {  quando o irmao de botao qie é menu for checado/ clicado o menude baixo aparece! 
+            background-color: white;
+            display: block;
+            position: absolute;
+            top: 75px;
+            right: 0;
+            width: 200px;
+        }
+
+        **/
+        .menu li {
+            margin: 2px;
+        }
+        
+
+    </style>
+</head>
+<body>
+        <div class="header">
+            <div class="nav">
+                <h1> Formulário</h1>
+                <input type="checkbox" id="botao">
+                <label for="botao">&#9776;</label>
+            </div>
+            <ul class="menu">
+            
+                <li class="li_menu">
+                    <a href="">Nome: </a>
+                    <input>
+                </li>
+
+                <li class="li_menu">
+                    <a href="">Contato:</a>
+                    <input>
+                </li>
+
+                <li class="li_menu">
+                    <a href="">Sobre: </a>
+                    <input>
+                </li>
+
+                <li class="li_menu">
+                    <a href="">Email:</a>
+                    <input>
+                </li>
+
+            </ul>
+        </div>
+    
+    <script src="ex02.js">
+
+    </script>
+</body>
+</html>
